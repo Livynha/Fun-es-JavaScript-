@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desafio DOM - HTML e CSS</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #eef1f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav li {
+        background: #0055aa;
+        padding: 8px 12px;
+        border-radius: 5px;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      section {
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border-left: 5px solid #003366;
+      }
+
+      h2 {
+        color: #003366;
+      }
+
+      .card {
+        border: 2px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      .importante {
+        background-color: #fff3cd;
+        border-color: #ffcc00;
+      }
+
+      .oculto {
+        display: none;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: gray;
+      }
+
+      input,
+      select,
+      button {
+        padding: 8px;
+        margin-top: 5px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="topo">
+      <h1 id="titulo-principal">Portal de Estudos - DOM</h1>
+      <p class="subtitulo">
+        Exploração de HTML e CSS para Manipulação via JavaScript
+      </p>
+
+      <nav>
+        <ul id="menu">
+          <li class="menu-item">Início</li>
+          <li class="menu-item">Conteúdos</li>
+          <li class="menu-item">Desafios</li>
+          <li class="menu-item">Contato</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sec-html">
+        <h2>HTML</h2>
+        <p>
+          HTML é a linguagem de marcação usada para estruturar páginas da web.
+        </p>
+
+        <div class="card importante" id="card-html">
+          <h3>Elementos HTML</h3>
+          <ul>
+            <li id="html-1">Tags</li>
+            <li id="html-2">Atributos</li>
+            <li id="html-3">Hierarquia</li>
+            <li id="html-4">Semântica</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="sec-css">
+        <h2>CSS</h2>
+        <p>
+          CSS é usado para estilizar e organizar visualmente os elementos HTML.
+        </p>
+
+        <div class="card" id="card-css">
+          <h3>Propriedades CSS</h3>
+          <ul>
+            <li class="css-item">color</li>
+            <li class="css-item">background</li>
+            <li class="css-item">margin</li>
+            <li class="css-item">padding</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="sec-form">
+        <h2>Formulário</h2>
+
+        <form id="formulario">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome" />
+
+          <label for="curso">Curso:</label>
+          <select id="curso">
+            <option>Desenvolvimento Web</option>
+            <option>Banco de Dados</option>
+            <option>Programação</option>
+          </select>
+
+       
+
+
+          <button id="btn-enviar">Enviar</button>
+        </form>
+      </section>
+
+      <section id="sec-extra">
+        <h2>Conteúdo Extra</h2>
+
+        <div class="card oculto" id="segredo">
+          <h3>Área Secreta</h3>
+          <p>Parabéns! Você encontrou um conteúdo oculto no DOM 🎉</p>
+        </div>
+
+        <p id="dica">Dica: Alguns elementos estão escondidos usando CSS...</p>
+      </section>
+    </main>
+
+    <footer>
+      <p id="rodape-texto">Aula de Programação - DOM e Estrutura de Páginas</p>
+    </footer>
+     <script src="./script.js"></script> 
+  </body>
+</html>
